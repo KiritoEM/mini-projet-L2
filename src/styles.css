@@ -4,7 +4,9 @@
 
 /* variales */
 :root {
-    --blue01: #1770F6
+    --blue01: #1770F6;
+    --gray01: rgba(34, 35, 36, 0.70);
+    --gray02: rgba(255, 255, 255, 0.50);
 }
 
 /* styles globales */
@@ -57,6 +59,27 @@ body {
     font-family: "lato-regular";
 }
 
+.nav .nav__container {
+    border-bottom: 1px solid var(--gray01);
+}
+
 .nav .auth-buttons :last-child {
     background-color: var(--blue01);
+}
+
+.hero .header h1 {
+    font-size: 4.5rem;
+    width: 880px;
+}
+
+.hero .header h1 span {
+    background: linear-gradient(92deg, #1770F6 68.89%, #9243FA 94.31%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero .header p {
+    color: var(--gray02);
+    width: 530px;
 }

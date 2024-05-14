@@ -10,25 +10,41 @@
 
 <body>
     <!-- barre de navigation -->
-    <nav class="nav">
-        <div class="nav__container px-20 py-7 flex justify-between items-center">
+    <nav class="nav px-4 absolute w-full z-100">
+        <div class="nav__container w-full px-10 md:px-16 py-5 md:py-7 flex justify-between items-center">
             <div class="logo">
                 <img src="/public/logo.svg" alt="">
             </div>
-            <div class="menu-item flex items-center">
+            <div class="menu-item flex items-center hidden lg:flex">
                 <ul class="flex gap-6">
-                    <li class="text-white">Accueil</li>
-                    <li class="text-white"></li>
-                    <li class="text-white">Fonctionnalités</li>
-                    <li class="text-white">FAQ</li>
+                    <li class="text-white cursor-pointer">Accueil</li>
+                    <li class="text-white cursor-pointer"></li>
+                    <li class="text-white cursor-pointer">Fonctionnalités</li>
+                    <li class="text-white cursor-pointer">FAQ</li>
                 </ul>
             </div>
-            <div class="auth-buttons flex gap-3 items-center">
+            <div class="auth-buttons flex gap-3 items-center hidden lg:flex">
                 <button class="text-white px-6 py-3">Se connecter</button>
                 <button class="text-white px-6 py-3 rounded-full">Nous rejoindre</button>
             </div>
         </div>
     </nav>
+
+    <!-- section hero -->
+    <section class="hero w-full overflow-hidden h-screen flex justify-center items-center">
+        <!-- hero bg -->
+        <img src="/public/hero-bg.png" class="absolute top-0 h-screen w-screen object-cover opacity-75" />
+        <!-- bg-[url('/public/hero-bg.png')] bg-cover bg-no-repeat bg-center -->
+        <div class="header relative z-50 flex flex-col gap-7 items-center">
+            <h1 class="text-white lato-black text-center leading-tight">L'espace conquis ! <span>Voyagez</span> vers les
+                étoiles !
+            </h1>
+            <p class="text-center">Nous mettons à votre disposition les planètes disponibles et capsules avec la
+                distance entre
+                chaque
+                destinations</p>
+        </div>
+    </section>
 </body>
 
 </html>
