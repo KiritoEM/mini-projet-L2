@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* variales */
+:root {
+    --blue01: #1770F6
+}
+
 /* styles globales */
 * {
     margin: 0;
@@ -49,4 +54,9 @@
 /* autre styles  */
 body {
     background-color: #0E0E0E;
+    font-family: "lato-regular";
+}
+
+.nav .auth-buttons :last-child {
+    background-color: var(--blue01);
 }
