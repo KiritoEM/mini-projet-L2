@@ -566,65 +566,13 @@ video {
   justify-content: space-between;
 }
 
-.gap-10 {
-  gap: 2.5rem;
-}
-
-.gap-7 {
-  gap: 1.75rem;
-}
-
-.gap-6 {
-  gap: 1.5rem;
-}
-
 .gap-4 {
   gap: 1rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 
 .px-20 {
   padding-left: 5rem;
   padding-right: 5rem;
-}
-
-.px-24 {
-  padding-left: 6rem;
-  padding-right: 6rem;
-}
-
-.px-36 {
-  padding-left: 9rem;
-  padding-right: 9rem;
-}
-
-.px-32 {
-  padding-left: 8rem;
-  padding-right: 8rem;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 
 .py-7 {
@@ -643,6 +591,52 @@ video {
   margin: 0;
   padding: 0;
 }
+
+/* importation des fonts */
+
+@font-face {
+  font-family: "lato-light";
+
+  src: url("/src/fonts/Lato-Light.ttf");
+}
+
+@font-face {
+  font-family: "lato-regular";
+
+  src: url("/src/fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "lato-bold";
+
+  src: url("/src/fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+  font-family: "lato-black";
+
+  src: url("/src/fonts/Lato-Black.ttf");
+}
+
+/* ajout de chaque font-family sur des classes */
+
+.lato-light {
+  font-family: "lato-light";
+}
+
+.lato-regular {
+  font-family: "lato-regular";
+}
+
+.lato-bold {
+  font-family: "lato-bold";
+}
+
+.lato-black {
+  font-family: "lato-black";
+}
+
+/* autre styles  */
 
 body {
   background-color: #0E0E0E;

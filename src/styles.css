@@ -8,6 +8,45 @@
     padding: 0;
 }
 
+/* importation des fonts */
+@font-face {
+    font-family: "lato-light";
+    src: url("/src/fonts/Lato-Light.ttf");
+}
+
+@font-face {
+    font-family: "lato-regular";
+    src: url("/src/fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "lato-bold";
+    src: url("/src/fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: "lato-black";
+    src: url("/src/fonts/Lato-Black.ttf");
+}
+
+/* ajout de chaque font-family sur des classes */
+.lato-light {
+    font-family: "lato-light";
+}
+
+.lato-regular {
+    font-family: "lato-regular";
+}
+
+.lato-bold {
+    font-family: "lato-bold";
+}
+
+.lato-black {
+    font-family: "lato-black";
+}
+
+/* autre styles  */
 body {
     background-color: #0E0E0E;
 }
