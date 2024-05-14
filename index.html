@@ -10,7 +10,7 @@
 
 <body>
     <!-- barre de navigation -->
-    <nav class="nav px-4 absolute w-full z-100">
+    <nav class="relative nav px-4 w-full z-50">
         <div class="nav__container w-full px-10 md:px-16 py-5 md:py-7 flex justify-between items-center">
             <div class="logo">
                 <img src="/public/logo.svg" alt="">
@@ -31,9 +31,9 @@
     </nav>
 
     <!-- section hero -->
-    <section class="hero w-full overflow-hidden h-screen flex justify-center items-center">
+    <section class="hero w-full overflow-hidden h-screen flex flex-col gap-10 justify-center items-center">
         <!-- hero bg -->
-        <img src="/public/hero-bg.png" class="absolute top-0 h-screen w-screen object-cover opacity-75" />
+        <img src="/public/hero-bg.png" class="absolute top-30 h-screen w-screen object-cover opacity-75 z-20" />
         <!-- bg-[url('/public/hero-bg.png')] bg-cover bg-no-repeat bg-center -->
         <div class="header relative z-50 flex flex-col gap-7 items-center">
             <h1 class="text-white lato-black text-center leading-tight">L'espace conquis ! <span>Voyagez</span> vers les
@@ -43,6 +43,10 @@
                 distance entre
                 chaque
                 destinations</p>
+        </div>
+        <div class="footer-buttons  w-max flex justify-center gap-8 relative z-50">
+            <button class="text-white px-6 py-3 rounded-full">Nous rejoindre</button>
+            <button class="text-white px-6 py-3 rounded-full">Nous contacter</button>
         </div>
     </section>
 </body>

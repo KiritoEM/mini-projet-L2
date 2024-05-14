@@ -59,6 +59,10 @@ body {
     font-family: "lato-regular";
 }
 
+.nav {
+    background-color: #0e0e0e54;
+}
+
 .nav .nav__container {
     border-bottom: 1px solid var(--gray01);
 }
@@ -81,5 +85,14 @@ body {
 
 .hero .header p {
     color: var(--gray02);
-    width: 530px;
+    width: 510px;
+}
+
+.hero .footer-buttons :first-child {
+    background-color: var(--blue01);
+}
+
+.hero .footer-buttons :last-child {
+    border: 1px solid #222;
+    background: linear-gradient(92deg, #131212 1.08%, rgba(22, 22, 22, 0.88) 46.58%, rgba(29, 28, 28, 0.78) 67.12%, rgba(25, 25, 25, 0.90) 98.92%);
 }
