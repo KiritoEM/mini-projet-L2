@@ -604,10 +604,6 @@ video {
   grid-column: span 3 / span 3;
 }
 
-.col-span-5 {
-  grid-column: span 5 / span 5;
-}
-
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -626,10 +622,6 @@ video {
 
 .hidden {
   display: none;
-}
-
-.h-80 {
-  height: 20rem;
 }
 
 .h-full {
@@ -1036,6 +1028,10 @@ body {
 }
 
 .features .content .container .card:nth-child(2) .card__content{
+  width: 350px;
+}
+
+.features .content .container .card:nth-child(3) .card__content{
   width: 350px;
 }
 

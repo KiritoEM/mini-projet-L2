@@ -153,3 +153,7 @@ body {
 .features .content .container .card:nth-child(2) .card__content{
     width: 350px;
 }
+
+.features .content .container .card:nth-child(3) .card__content{
+    width: 350px;
+}
