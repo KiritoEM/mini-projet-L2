@@ -604,20 +604,8 @@ video {
   grid-column: span 3 / span 3;
 }
 
-.ml-2 {
-  margin-left: 0.5rem;
-}
-
 .mr-2 {
   margin-right: 0.5rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
 }
 
 .flex {
@@ -657,11 +645,6 @@ video {
   width: 100%;
 }
 
-.w-max {
-  width: -moz-max-content;
-  width: max-content;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
@@ -694,10 +677,6 @@ video {
   justify-content: space-between;
 }
 
-.gap-1 {
-  gap: 0.25rem;
-}
-
 .gap-10 {
   gap: 2.5rem;
 }
@@ -714,6 +693,10 @@ video {
   gap: 0.75rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .gap-5 {
   gap: 1.25rem;
 }
@@ -724,18 +707,6 @@ video {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-4 {
-  gap: 1rem;
-}
-
-.gap-6 {
-  gap: 1.5rem;
-}
-
-.gap-9 {
-  gap: 2.25rem;
 }
 
 .gap-x-10 {
@@ -838,6 +809,11 @@ video {
   padding-right: 1.5rem;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -848,31 +824,25 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.py-40 {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-}
-
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
 
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
-.pt-24 {
-  padding-top: 6rem;
-}
-
-.pb-5 {
-  padding-bottom: 1.25rem;
+.pb-32 {
+  padding-bottom: 8rem;
 }
 
 .pb-7 {
   padding-bottom: 1.75rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
 }
 
 .text-center {
@@ -988,6 +958,16 @@ body {
 .hero .header h1 {
   font-size: 4.5rem;
   width: 880px;
+  @media screen and (max-width : 767px) {
+    font-size: 2rem;
+
+    width: 100%;
+  }
+  @media screen and (min-width : 768px) and (max-width: 1023px) {
+    font-size: 3rem;
+
+    width: 600px;
+  }
 }
 
 .hero .header h1 span {
@@ -1000,6 +980,12 @@ body {
 .hero .header p {
   color: var(--gray02);
   width: 510px;
+  @media screen and (max-width : 768px) {
+    width: 100%;
+  }
+  @media screen and (min-width : 768px) and (max-width: 1023px) {
+    width: 500px;
+  }
 }
 
 .hero .footer-buttons :first-child {
@@ -1019,6 +1005,22 @@ body {
   padding: 0.5rem 1rem;
   width: -moz-max-content;
   width: max-content;
+  @media screen and (max-width : 768px) {
+    display: flex;
+
+    justify-content: center;
+
+    text-align: center;
+  }
+  @media screen and (max-width : 367px) {
+    width: 100% !important;
+
+    display: flex;
+
+    justify-content: center;
+
+    text-align: center;
+  }
 }
 
 .tag p {
@@ -1079,19 +1081,59 @@ footer p {
 }
 
 @media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:h-screen {
+    height: 100vh;
+  }
+
+  .md\:w-max {
+    width: -moz-max-content;
+    width: max-content;
+  }
+
+  .md\:gap-8 {
+    gap: 2rem;
+  }
+
+  .md\:bg-center {
+    background-position: center;
+  }
+
   .md\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .md\:py-40 {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 
   .md\:py-7 {
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
   }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1024px) {
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:h-auto {
+    height: auto;
+  }
+
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }

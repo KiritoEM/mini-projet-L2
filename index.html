@@ -32,23 +32,23 @@
 
     <!-- section hero -->
     <section
-        class="hero w-full overflow-hidden  flex flex-col gap-10 py-40 justify-center items-center bg-[url('/public/hero-bg.png')] bg-cover bg-no-repeat bg-center">
-        <div class="header relative z-50 flex flex-col gap-7 items-center">
+        class="hero w-full md:h-screen lg:h-auto overflow-hidden flex flex-col gap-10 pt-20 pb-32 md:py-40 px-8 md:px-16 lg:px-0 justify-center items-center bg-[url('/public/hero-bg.png')] bg-cover bg-no-repeat bg-center md:bg-center">
+        <div class="header relative z-50 flex flex-col gap-7 items-center w-full md:w-max">
             <div class="tag">
-                <p class="flex"><img src="/public/flare.svg" class="mr-2" />Intégration de notre IA pour vous assister
-                    <span class="ml-2 lato-medium text-white flex gap-1 items-center">Discuter <img
-                            src="/public/arrow-right.svg" alt=""></span>
+                <p class="flex"><img src="/public/flare.svg" class="mr-2 hidden md:flex" />Intégration de notre IA pour
+                    vous assister
                 </p>
             </div>
             <h1 class="text-white lato-black text-center leading-tight">L'espace conquis ! <span>Voyagez</span> vers les
                 étoiles !
             </h1>
-            <p class="text-center text-lg">Nous mettons à votre disposition les planètes disponibles et capsules avec la
+            <p class="text-center md:text-lg">Nous mettons à votre disposition les planètes disponibles et capsules avec
+                la
                 distance entre
                 chaque
                 destinations</p>
         </div>
-        <div class="footer-buttons  w-max flex justify-center gap-8 relative z-50">
+        <div class="footer-buttons  md:w-max flex justify-center gap-4 md:gap-8 relative z-50">
             <button class="text-white px-6 py-3 rounded-full">Nous rejoindre</button>
             <button class="text-white px-6 py-3 rounded-full">Nous contacter</button>
         </div>
@@ -56,7 +56,7 @@
 
     <!-- section about -->
     <section
-        class="about flex items-center gap-24 pt-24 px-20 bg-[url('/public/star.png')] bg-cover bg-no-repeat bg-center">
+        class="about hidden flex items-center gap-24 pt-24 px-20 bg-[url('/public/star.png')] bg-cover bg-no-repeat bg-center">
         <div class="earth w-2/5">
             <img src="/public/earth.png" class="w-full h-full object-contain" />
         </div>
@@ -86,7 +86,7 @@
 
     <!-- section fonctionnalités -->
     <section
-        class="features w-full h-max overflow-hidden flex flex-col gap-10 py-24 px-28 justify-center items-start bg-[url('/public/features-bg.png')] bg-cover bg-no-repeat bg-center">
+        class="features hidden w-full h-max overflow-hidden flex flex-col gap-10 py-24 px-28 justify-center items-start bg-[url('/public/features-bg.png')] bg-cover bg-no-repeat bg-center">
         <div class="header w-full flex justify-between items-end">
             <div class="title flex flex-col gap-7">
                 <div class="tag">
@@ -139,7 +139,7 @@
     </section>
 
     <!-- footer -->
-    <footer class="px-16 pb-7 flex flex-col gap-8">
+    <footer class="px-16 hidden pb-7 flex flex-col gap-8">
         <div class="footer_first flex justify-between">
             <div class="logo">
                 <img src="/public/logo.svg" alt="">

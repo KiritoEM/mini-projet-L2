@@ -74,6 +74,16 @@ body {
 .hero .header h1 {
     font-size: 4.5rem;
     width: 880px;
+
+    @media screen and (max-width : 767px) {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    @media screen and (min-width : 768px) and (max-width: 1023px) {
+        font-size: 3rem;
+        width: 600px;
+    }
 }
 
 .hero .header h1 span {
@@ -86,6 +96,14 @@ body {
 .hero .header p {
     color: var(--gray02);
     width: 510px;
+
+    @media screen and (max-width : 768px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width : 768px) and (max-width: 1023px) {
+        width: 500px;
+    }
 }
 
 .hero .footer-buttons :first-child {
@@ -104,6 +122,19 @@ body {
     color: var(--gray01);
     padding: 0.5rem 1rem;
     width: max-content;
+
+    @media screen and (max-width : 768px) {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    @media screen and (max-width : 367px) {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 .tag p {
