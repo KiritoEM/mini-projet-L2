@@ -140,3 +140,12 @@ body {
 .features .header button {
     background-color: var(--blue01);
 }
+
+
+.features .content p{
+    color: var(--gray02);
+}
+
+.features .content .container .card:nth-child(1){
+    height: 380px;
+}
