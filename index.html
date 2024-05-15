@@ -16,9 +16,9 @@
                 <img src="/public/logo.svg" alt="">
             </div>
             <div class="menu-item flex items-center hidden lg:flex">
-                <ul class="flex gap-6">
+                <ul class="flex gap-8">
                     <li class="text-white cursor-pointer">Accueil</li>
-                    <li class="text-white cursor-pointer"></li>
+                    <li class="text-white cursor-pointer">A propos</li>
                     <li class="text-white cursor-pointer">Fonctionnalités</li>
                     <li class="text-white cursor-pointer">FAQ</li>
                 </ul>
@@ -103,7 +103,7 @@
             <div class="container grid grid-cols-5 gap-x-10 gap-y-12">
                 <div
                     class="card col-span-2 bg-[url('/public/features-card1.png')] bg-cover bg-center bg-no-repeat rounded-xl overflow-hidden p-8 flex items-end">
-                    <div class="card__content">
+                    <div class="card__content flex flex-col gap-3">
                         <h3 class="text-white text-2xl font-bold">Authentification par reconnaissance faciale</h3>
                         <p>Utilisez notre application en toute sécurité en vous authentifiant par reconnaissance faciale
                         </p>
@@ -111,7 +111,7 @@
                 </div>
                 <div
                     class="card col-span-3 bg-[url('/public/features-card2.png')]  bg-cover bg-center bg-no-repeat rounded-xl overflow-hidden p-8 flex items-end">
-                    <div class="card__content">
+                    <div class="card__content flex flex-col gap-3">
                         <h3 class="text-white text-2xl font-bold">Visualisation en 3D de l’ espace et les planètes</h3>
                         <p>Profitez s’ une visualisation en 3D de l’espace et les planètes y compris , emerveillez vous!
                         </p>
@@ -119,8 +119,8 @@
                 </div>
                 <div
                     class="card col-span-3 bg-[url('/public/features-card3.png')]  bg-cover bg-center bg-no-repeat rounded-xl overflow-hidden p-8 flex items-end">
-                    <div class="card__content">
-                        <h3 class="text-white text-2xl font-bold">Proposition de casules et diverses destinations</h3>
+                    <div class="card__content flex flex-col gap-3">
+                        <h3 class="text-white text-2xl font-bold">Proposition de capsules et diverses destinations</h3>
                         <p>Nous vous proposons diverses capsules et avons diversifiés les destinations selon vos besoins
                         </p>
                     </div>
@@ -137,6 +137,29 @@
 
         </div>
     </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer_first px-16 py-5 flex justify-between">
+            <div class="logo">
+                <img src="/public/logo.svg" alt="">
+            </div>
+            <div class="menu-item flex items-center hidden lg:flex">
+                <ul class="flex gap-8">
+                    <li class="text-white cursor-pointer">Accueil</li>
+                    <li class="text-white cursor-pointer">A propos</li>
+                    <li class="text-white cursor-pointer">Fonctionnalités</li>
+                    <li class="text-white cursor-pointer">FAQ</li>
+                </ul>
+            </div>
+            <div class="social-icons flex gap-5">
+                <img src="/public/facebook.svg" alt="">
+                <img src="/public/twitter.svg" alt="">
+                <img src="public/instagram.svg" alt="">
+            </div>
+        </div>
+        <p class="text-center">© 2024 by <span class="lato-bold">Johan</span></p>
+    </footer>
 </body>
 
 </html>

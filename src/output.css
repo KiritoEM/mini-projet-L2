@@ -706,8 +706,8 @@ video {
   gap: 0.75rem;
 }
 
-.gap-6 {
-  gap: 1.5rem;
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-7 {
@@ -716,6 +716,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .gap-x-10 {
@@ -791,6 +795,11 @@ video {
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .px-20 {
@@ -969,7 +978,7 @@ body {
 }
 
 .hero .footer-buttons :last-child {
-  border: 1px solid var(--gray02);
+  border: 1px solid var(--gray01);
   background: linear-gradient(92deg, #131212 1.08%, rgba(22, 22, 22, 0.88) 46.58%, rgba(29, 28, 28, 0.78) 67.12%, rgba(25, 25, 25, 0.90) 98.92%);
 }
 
@@ -1019,20 +1028,25 @@ body {
   background-color: var(--blue01);
 }
 
-.features .content p{
+.features .content p {
   color: var(--gray02);
 }
 
-.features .content .container .card{
+.features .content .container .card {
   height: 380px;
+  border: 1px solid var(--gray01);
 }
 
-.features .content .container .card:nth-child(2) .card__content{
+.features .content .container .card:nth-child(2) .card__content {
   width: 350px;
 }
 
-.features .content .container .card:nth-child(3) .card__content{
+.features .content .container .card:nth-child(3) .card__content {
   width: 350px;
+}
+
+footer p {
+  color: var(--gray02);
 }
 
 @media (min-width: 768px) {
