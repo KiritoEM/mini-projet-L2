@@ -84,6 +84,10 @@ body {
         font-size: 3rem;
         width: 600px;
     }
+
+    @media screen and (max-width : 340px) {
+        font-size: 2rem;
+    }
 }
 
 .hero .header h1 span {
@@ -128,13 +132,15 @@ body {
         justify-content: center;
         text-align: center;
     }
+}
 
-    /* @media screen and (max-width : 367px) {
+.tag-hero {
+    @media screen and (max-width : 340px) {
         width: 100% !important;
         display: flex;
         justify-content: center;
         text-align: center;
-    } */
+    }
 }
 
 .tag p {

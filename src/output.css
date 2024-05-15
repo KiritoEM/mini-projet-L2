@@ -824,10 +824,6 @@ video {
   padding-top: 5rem;
 }
 
-.pt-24 {
-  padding-top: 6rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -951,6 +947,9 @@ body {
 
     width: 600px;
   }
+  @media screen and (max-width : 340px) {
+    font-size: 2rem;
+  }
 }
 
 .hero .header h1 span {
@@ -995,12 +994,18 @@ body {
 
     text-align: center;
   }
-  /* @media screen and (max-width : 367px) {
-        width: 100% !important;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    } */
+}
+
+.tag-hero {
+  @media screen and (max-width : 340px) {
+    width: 100% !important;
+
+    display: flex;
+
+    justify-content: center;
+
+    text-align: center;
+  }
 }
 
 .tag p {
@@ -1101,19 +1106,14 @@ footer p {
     padding-top: 6rem;
   }
 
-  .md\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 }
 
@@ -1152,13 +1152,13 @@ footer p {
     padding-right: 5rem;
   }
 
-  .lg\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
