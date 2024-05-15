@@ -621,6 +621,10 @@ video {
   height: max-content;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .w-full {
   width: 100%;
 }
@@ -683,6 +687,14 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.\!gap-8 {
+  gap: 2rem !important;
 }
 
 .gap-x-10 {
@@ -790,6 +802,11 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .pb-32 {
   padding-bottom: 8rem;
 }
@@ -800,6 +817,14 @@ video {
 
 .pt-20 {
   padding-top: 5rem;
+}
+
+.pt-28 {
+  padding-top: 7rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .text-center {
@@ -970,7 +995,7 @@ body {
 }
 
 .tag-hero {
-  @media screen and (max-width : 340px) {
+  @media screen and (max-width : 361px) {
     width: 100% !important;
 
     display: flex;
@@ -1004,6 +1029,9 @@ body {
 
 .features .title h2 {
   width: 420px;
+  @media screen and (max-width : 767px) {
+    width: 100%;
+  }
 }
 
 .features .title h2 span {
@@ -1079,12 +1107,16 @@ footer p {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
   .md\:gap-8 {
     gap: 2rem;
   }
 
-  .md\:bg-cover {
-    background-size: cover;
+  .md\:gap-0 {
+    gap: 0px;
   }
 
   .md\:bg-center {
@@ -1156,6 +1188,10 @@ footer p {
 
   .lg\:flex-row {
     flex-direction: row;
+  }
+
+  .lg\:gap-0 {
+    gap: 0px;
   }
 
   .lg\:px-0 {

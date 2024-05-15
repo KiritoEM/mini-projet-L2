@@ -32,7 +32,7 @@
 
     <!-- section hero -->
     <section
-        class="hero w-full md:h-screen lg:h-auto overflow-hidden flex flex-col gap-10 pt-20 pb-32 md:py-40 px-8 md:px-16 lg:px-0 justify-center items-center bg-[url('/public/hero-bg.png')] bg-cover bg-no-repeat bg-center md:bg-center">
+        class="hero w-full md:h-screen lg:h-auto overflow-hidden flex flex-col gap-10 pt-16 pb-32 md:py-40 px-8 md:px-16 lg:px-0 justify-center items-center bg-[url('/public/hero-bg.png')] bg-cover bg-no-repeat bg-center md:bg-center">
         <div class="header relative z-50 flex flex-col gap-7 items-center w-full md:w-max">
             <div class="tag tag-hero">
                 <p class="flex"><img src="/public/flare.svg" class="mr-2 hidden md:flex" />Intégration de notre IA pour
@@ -56,7 +56,7 @@
 
     <!-- section about -->
     <section
-        class="about flex flex-col lg:flex-row items-center gap-24 pt-20 md:pt-24 px-10 md:px-16 lg:px-20 bg-[url('/public/star.png')] bg-cover bg-no-repeat bg-center">
+        class="about flex flex-col lg:flex-row items-center gap-24 pt-20 md:pt-24 px-10 md:px-16 lg:px-20 bg-[url('/public/star.png')] bg-cover bg-no-repeat bg-center overflow-hidden">
         <div class="earth hidden lg:flex lg:w-2/5">
             <img src="/public/earth.png" class="w-full h-full object-contain" />
         </div>
@@ -87,7 +87,7 @@
 
     <!-- section fonctionnalités -->
     <section
-        class="features w-full h-max overflow-hidden flex flex-col gap-10 pt-20 md:pt-24 px-10 md:px-16 lg:px-20 justify-center items-start bg-[url('/public/features-bg.png')] bg-cover bg-no-repeat bg-center">
+        class="features w-full h-max overflow-hidden flex flex-col gap-10 py-20 md:pt-24 px-10 md:px-16 lg:px-20 justify-center items-start bg-[url('/public/features-bg.png')] bg-cover bg-no-repeat bg-center overflow-hidden">
         <div class="header w-full flex justify-between items-end">
             <div class="title flex flex-col gap-7">
                 <div class="tag">
@@ -96,7 +96,7 @@
                 <h2 class="text-white text-3xl md:text-4xl lg:text-5xl lato-bold lg:leading-tight">Nos fonctionnalités à
                     votre <span class="lato-black">services</span></h2>
             </div>
-            <button class="text-white px-6 py-3 rounded-full flex items-center gap-2">
+            <button class="text-white px-6 py-3 rounded-full flex items-center gap-2 hidden md:flex">
                 Nos fonctionnalités <img src="/public/arrow-right.svg" alt="">
             </button>
         </div>
@@ -143,13 +143,13 @@
     </section>
 
     <!-- footer -->
-    <footer class="px-16 hidden pb-7 flex flex-col gap-8">
-        <div class="footer_first flex justify-between">
+    <footer class="px-10 md:px-16 pb-7 flex flex-col gap-10 md:gap-8 overflow-hidden">
+        <div class="footer_first flex flex-col lg:flex-row gap-10 lg:gap-0 justify-between">
             <div class="logo">
                 <img src="/public/logo.svg" alt="">
             </div>
-            <div class="menu-item flex items-center hidden lg:flex">
-                <ul class="flex gap-8">
+            <div class="menu-item flex items-center">
+                <ul class="flex flex-col md:flex-row gap-5 md:gap-8">
                     <li class="text-white cursor-pointer">Accueil</li>
                     <li class="text-white cursor-pointer">A propos</li>
                     <li class="text-white cursor-pointer">Fonctionnalités</li>
