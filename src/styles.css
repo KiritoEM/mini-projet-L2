@@ -146,6 +146,10 @@ body {
     color: var(--gray02);
 }
 
-.features .content .container .card:nth-child(1){
+.features .content .container .card{
     height: 380px;
+}
+
+.features .content .container .card:nth-child(2) .card__content{
+    width: 350px;
 }

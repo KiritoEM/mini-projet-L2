@@ -792,14 +792,6 @@ video {
      object-fit: contain;
 }
 
-.p-7 {
-  padding: 1.75rem;
-}
-
-.p-9 {
-  padding: 2.25rem;
-}
-
 .p-8 {
   padding: 2rem;
 }
@@ -1039,8 +1031,12 @@ body {
   color: var(--gray02);
 }
 
-.features .content .container .card:nth-child(1){
+.features .content .container .card{
   height: 380px;
+}
+
+.features .content .container .card:nth-child(2) .card__content{
+  width: 350px;
 }
 
 @media (min-width: 768px) {
