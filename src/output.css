@@ -554,24 +554,28 @@ video {
   --tw-contain-style:  ;
 }
 
-.absolute {
-  position: absolute;
-}
-
 .relative {
   position: relative;
 }
 
-.top-0 {
-  top: 0px;
-}
-
-.z-20 {
-  z-index: 20;
-}
-
 .z-50 {
   z-index: 50;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.mr-4 {
+  margin-right: 1rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
 }
 
 .flex {
@@ -582,17 +586,12 @@ video {
   display: none;
 }
 
-.h-max {
-  height: -moz-max-content;
-  height: max-content;
-}
-
 .h-screen {
   height: 100vh;
 }
 
-.h-full {
-  height: 100%;
+.w-3\/5 {
+  width: 60%;
 }
 
 .w-full {
@@ -602,10 +601,6 @@ video {
 .w-max {
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-screen {
-  width: 100vw;
 }
 
 .cursor-pointer {
@@ -648,6 +643,14 @@ video {
   gap: 2rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -672,11 +675,6 @@ video {
   background-repeat: no-repeat;
 }
 
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -690,6 +688,11 @@ video {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .py-3 {
@@ -713,10 +716,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.opacity-75 {
-  opacity: 0.75;
 }
 
 /* variales */
@@ -819,8 +818,23 @@ body {
 }
 
 .hero .footer-buttons :last-child {
-  border: 1px solid #222;
+  border: 1px solid var(--gray01);
   background: linear-gradient(92deg, #131212 1.08%, rgba(22, 22, 22, 0.88) 46.58%, rgba(29, 28, 28, 0.78) 67.12%, rgba(25, 25, 25, 0.90) 98.92%);
+}
+
+.tag {
+  background: linear-gradient(91deg, #131212 -1.88%, rgba(22, 22, 22, 0.88) 37%, rgba(35, 34, 34, 0.69) 77.89%, rgba(25, 25, 25, 0.77) 95.05%);
+  border: 1px solid var(--gray01);
+  border-radius: 50px;
+  color: var(--gray01);
+  padding: 0.5rem 1rem;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.tag p {
+  width: -moz-max-content !important;
+  width: max-content !important;
 }
 
 @media (min-width: 768px) {

@@ -93,6 +93,19 @@ body {
 }
 
 .hero .footer-buttons :last-child {
-    border: 1px solid #222;
+    border: 1px solid var(--gray01);
     background: linear-gradient(92deg, #131212 1.08%, rgba(22, 22, 22, 0.88) 46.58%, rgba(29, 28, 28, 0.78) 67.12%, rgba(25, 25, 25, 0.90) 98.92%);
+}
+
+.tag {
+    background: linear-gradient(91deg, #131212 -1.88%, rgba(22, 22, 22, 0.88) 37%, rgba(35, 34, 34, 0.69) 77.89%, rgba(25, 25, 25, 0.77) 95.05%);
+    border: 1px solid var(--gray01);
+    border-radius: 50px;
+    color: var(--gray01);
+    padding: 0.5rem 1rem;
+    width: max-content;
+}
+
+.tag p {
+    width: max-content !important;
 }
