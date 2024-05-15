@@ -6,7 +6,7 @@
 :root {
     --blue01: #1770F6;
     --gray01: rgba(34, 35, 36, 0.70);
-    --gray02: rgba(255, 255, 255, 0.50);
+    --gray02: #ffffff75;
 }
 
 /* styles globales */
@@ -93,7 +93,7 @@ body {
 }
 
 .hero .footer-buttons :last-child {
-    border: 1px solid var(--gray01);
+    border: 1px solid var(--gray02);
     background: linear-gradient(92deg, #131212 1.08%, rgba(22, 22, 22, 0.88) 46.58%, rgba(29, 28, 28, 0.78) 67.12%, rgba(25, 25, 25, 0.90) 98.92%);
 }
 
@@ -108,4 +108,20 @@ body {
 
 .tag p {
     width: max-content !important;
+    color: var(--gray02);
+}
+
+.about .about-content .header span {
+    background: linear-gradient(92deg, #1770F6 68.89%, #9243FA 94.31%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about .about-content .content p {
+    color: var(--gray02);
+}
+
+.about .about-content  button {
+    background-color: var(--blue01);
 }

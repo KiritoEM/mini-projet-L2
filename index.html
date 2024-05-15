@@ -32,17 +32,18 @@
 
     <!-- section hero -->
     <section
-        class="hero w-full overflow-hidden h-screen flex flex-col gap-10 justify-center items-center bg-[url('/public/hero-bg.png')] bg-cover bg-no-repeat bg-center">
+        class="hero w-full overflow-hidden  flex flex-col gap-10 py-40 justify-center items-center bg-[url('/public/hero-bg.png')] bg-cover bg-no-repeat bg-center">
         <div class="header relative z-50 flex flex-col gap-7 items-center">
             <div class="tag">
-                <p class="flex"><img src="/public/flare.svg" class="mr-2" />Intégration de notre IA pour vous assister <span
-                        class="ml-2 lato-medium text-white flex gap-1 items-center">Discuter <img
-                            src="/public/arrow-right.svg" alt=""></span></p>
+                <p class="flex"><img src="/public/flare.svg" class="mr-2" />Intégration de notre IA pour vous assister
+                    <span class="ml-2 lato-medium text-white flex gap-1 items-center">Discuter <img
+                            src="/public/arrow-right.svg" alt=""></span>
+                </p>
             </div>
             <h1 class="text-white lato-black text-center leading-tight">L'espace conquis ! <span>Voyagez</span> vers les
                 étoiles !
             </h1>
-            <p class="text-center">Nous mettons à votre disposition les planètes disponibles et capsules avec la
+            <p class="text-center text-lg">Nous mettons à votre disposition les planètes disponibles et capsules avec la
                 distance entre
                 chaque
                 destinations</p>
@@ -54,11 +55,33 @@
     </section>
 
     <!-- section about -->
-    <section class="about flex py-24">
-        <div class="earth w-3/5">
-            <img src="/public/earth.png" alt="" />
+    <section
+        class="about flex items-center gap-24 py-24 px-20 bg-[url('/public/star.png')] bg-cover bg-no-repeat bg-center">
+        <div class="earth w-2/5">
+            <img src="/public/earth.png" class="w-full h-full object-contain" />
         </div>
-        <div class="about-content"></div>
+        <div class="about-content w-3/5 flex flex-col items-start gap-10">
+            <div class="header flex flex-col gap-7">
+                <div class="tag">
+                    <p class="flex">A propos</p>
+                </div>
+                <h2 class="text-white text-5xl lato-bold">Parlons un peu de <span class="lato-black">Proxima</span></h2>
+            </div>
+            <div class="content">
+                <p class="text-lg w-11/12">
+                    <span class="lato-bold text-white">Proxima</span> est une application révolutionnaire qui vous
+                    permet de voyager vers les
+                    étoiles. Nous
+                    mettons à votre disposition une liste des planètes disponibles, ainsi que des capsules spatiales
+                    pour atteindre ces destinations. Vous trouverez également des informations sur la distance entre
+                    chaque destination et notre planète d'origine. Préparez-vous à explorer l'univers comme jamais
+                    auparavant avec Proxima !
+                </p>
+            </div>
+            <button class="text-white px-6 py-3 rounded-full">
+                Nos fonctionnalités
+            </button>
+        </div>
     </section>
 </body>
 
