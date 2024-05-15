@@ -596,14 +596,6 @@ video {
   z-index: 50;
 }
 
-.col-span-2 {
-  grid-column: span 2 / span 2;
-}
-
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
-
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -635,10 +627,6 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-.grid-cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -777,11 +765,6 @@ video {
   padding-right: 4rem;
 }
 
-.px-28 {
-  padding-left: 7rem;
-  padding-right: 7rem;
-}
-
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -795,11 +778,6 @@ video {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
-}
-
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
 }
 
 .py-3 {
@@ -828,19 +806,14 @@ video {
   text-align: center;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -962,7 +935,7 @@ body {
 .hero .header p {
   color: var(--gray02);
   width: 510px;
-  @media screen and (max-width : 768px) {
+  @media screen and (max-width : 767px) {
     width: 100%;
   }
   @media screen and (min-width : 768px) and (max-width: 1023px) {
@@ -987,7 +960,7 @@ body {
   padding: 0.5rem 1rem;
   width: -moz-max-content;
   width: max-content;
-  @media screen and (max-width : 768px) {
+  @media screen and (max-width : 767px) {
     display: flex;
 
     justify-content: center;
@@ -1051,14 +1024,33 @@ body {
 .features .content .container .card {
   height: 380px;
   border: 1px solid var(--gray01);
+  @media screen and (max-width : 767px) {
+    height: 400px;
+  }
+  @media screen and (max-width : 340px) {
+    height: 450px;
+  }
+  @media screen and (min-width : 768px) and (max-width: 1023px) {
+    height: 395px;
+  }
 }
 
 .features .content .container .card:nth-child(2) .card__content {
   width: 350px;
+  @media screen and (min-width : 768px) and (max-width: 1023px) {
+    flex-grow: 1;
+
+    width: 100%;
+  }
 }
 
 .features .content .container .card:nth-child(3) .card__content {
   width: 350px;
+  @media screen and (min-width : 768px) and (max-width: 1023px) {
+    flex-grow: 1;
+
+    width: 100%;
+  }
 }
 
 footer p {
@@ -1066,6 +1058,10 @@ footer p {
 }
 
 @media (min-width: 768px) {
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1079,8 +1075,16 @@ footer p {
     width: max-content;
   }
 
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .md\:gap-8 {
     gap: 2rem;
+  }
+
+  .md\:bg-cover {
+    background-size: cover;
   }
 
   .md\:bg-center {
@@ -1118,6 +1122,14 @@ footer p {
 }
 
 @media (min-width: 1024px) {
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .lg\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -1138,6 +1150,10 @@ footer p {
     width: 60%;
   }
 
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -1152,6 +1168,11 @@ footer p {
     padding-right: 5rem;
   }
 
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -1160,5 +1181,9 @@ footer p {
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:leading-tight {
+    line-height: 1.25;
   }
 }
