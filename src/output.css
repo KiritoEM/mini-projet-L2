@@ -629,18 +629,6 @@ video {
   height: max-content;
 }
 
-.w-11\/12 {
-  width: 91.666667%;
-}
-
-.w-2\/5 {
-  width: 40%;
-}
-
-.w-3\/5 {
-  width: 60%;
-}
-
 .w-full {
   width: 100%;
 }
@@ -789,11 +777,6 @@ video {
   padding-right: 4rem;
 }
 
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
 .px-28 {
   padding-left: 7rem;
   padding-right: 7rem;
@@ -854,14 +837,14 @@ video {
   line-height: 2rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -959,7 +942,7 @@ body {
   font-size: 4.5rem;
   width: 880px;
   @media screen and (max-width : 767px) {
-    font-size: 2rem;
+    font-size: 2.2rem;
 
     width: 100%;
   }
@@ -1012,15 +995,12 @@ body {
 
     text-align: center;
   }
-  @media screen and (max-width : 367px) {
-    width: 100% !important;
-
-    display: flex;
-
-    justify-content: center;
-
-    text-align: center;
-  }
+  /* @media screen and (max-width : 367px) {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    } */
 }
 
 .tag p {
@@ -1117,9 +1097,23 @@ footer p {
     padding-bottom: 1.75rem;
   }
 
+  .md\:pt-24 {
+    padding-top: 6rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -1132,8 +1126,39 @@ footer p {
     height: auto;
   }
 
+  .lg\:w-11\/12 {
+    width: 91.666667%;
+  }
+
+  .lg\:w-2\/5 {
+    width: 40%;
+  }
+
+  .lg\:w-3\/5 {
+    width: 60%;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
