@@ -582,6 +582,11 @@ video {
   height: 100%;
 }
 
+.h-max {
+  height: -moz-max-content;
+  height: max-content;
+}
+
 .w-11\/12 {
   width: 91.666667%;
 }
@@ -615,6 +620,10 @@ video {
   align-items: flex-start;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
@@ -635,8 +644,8 @@ video {
   gap: 2.5rem;
 }
 
-.gap-20 {
-  gap: 5rem;
+.gap-24 {
+  gap: 6rem;
 }
 
 .gap-3 {
@@ -655,8 +664,8 @@ video {
   gap: 2rem;
 }
 
-.gap-24 {
-  gap: 6rem;
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .overflow-hidden {
@@ -665,6 +674,10 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.bg-\[url\(\'\/public\/features-bg\.png\'\)\] {
+  background-image: url('/public/features-bg.png');
 }
 
 .bg-\[url\(\'\/public\/hero-bg\.png\'\)\] {
@@ -730,6 +743,10 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
 }
 
 .text-center {
@@ -886,7 +903,22 @@ body {
   color: var(--gray02);
 }
 
-.about .about-content  button {
+.about .about-content button {
+  background-color: var(--blue01);
+}
+
+.features .title h2 {
+  width: 420px;
+}
+
+.features .title h2 span {
+  background: linear-gradient(92deg, #1770F6 68.89%, #9243FA 94.31%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.features .header button {
   background-color: var(--blue01);
 }
 

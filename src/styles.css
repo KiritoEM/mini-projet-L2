@@ -122,6 +122,21 @@ body {
     color: var(--gray02);
 }
 
-.about .about-content  button {
+.about .about-content button {
+    background-color: var(--blue01);
+}
+
+.features .title h2 {
+    width: 420px;
+}
+
+.features .title h2 span {
+    background: linear-gradient(92deg, #1770F6 68.89%, #9243FA 94.31%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.features .header button {
     background-color: var(--blue01);
 }
