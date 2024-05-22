@@ -16,6 +16,7 @@ let draggingState = false;
 let startX;
 let startScrollLeft;
 
+//fonction pour commencer le swiper
 const startDragging = (e) => {
   draggingState = true;
   swiperContainer.classList.add("dragging");
@@ -23,16 +24,19 @@ const startDragging = (e) => {
   startScrollLeft = swiperContainer.scrollLeft;
 };
 
+//fonction pour le swiper
 const dragging = (e) => {
   if (!draggingState) return;
   swiperContainer.scrollLeft = startScrollLeft - (e.pageX - startX);
 };
 
+//fonction pour arrêter le swiper
 const stopDragging = () => {
   draggingState = false;
   swiperContainer.classList.remove("dragging");
 };
 
+//event listener
 swiperContainer.addEventListener("mousedown", startDragging);
 swiperContainer.addEventListener("mousemove", dragging);
 swiperContainer.addEventListener("mouseup", stopDragging);
