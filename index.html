@@ -10,8 +10,9 @@
 
 <body>
     <!-- barre de navigation -->
-    <nav class="relative nav px-4 w-full z-50">
-        <div class="nav__container w-full px-10 md:px-16 py-5 md:py-7 flex justify-between items-center">
+    <nav class="nav w-full z-50">
+        <div
+            class="nav__container container mx-auto w-full px-10 md:px-16 py-5 md:py-7 flex justify-between items-center">
             <div class="logo">
                 <img src="/public/logo.svg" alt="">
             </div>
@@ -24,7 +25,7 @@
                 </ul>
             </div>
             <div class="auth-buttons flex gap-3 items-center hidden lg:flex">
-                <button class="text-white px-6 py-3">Se connecter</button>
+                <button class="text-white px-6 py-3">Liste des destinations</button>
                 <button class="text-white px-6 py-3 rounded-full">Nous rejoindre</button>
             </div>
         </div>
@@ -32,7 +33,7 @@
 
     <!-- section hero -->
     <section
-        class="hero w-full md:h-screen lg:h-auto overflow-hidden flex flex-col gap-10 pt-16 pb-32 md:py-40 px-8 md:px-16 lg:px-0 justify-center items-center bg-[url('/public/hero-bg.png')] bg-cover bg-no-repeat bg-center md:bg-center">
+        class="hero w-full h-auto lg:h-screen py-28 md:py-40 px-10 md:px-16 lg:px-0  overflow-hidden flex flex-col gap-10 justify-center items-center bg-[url('/public/hero-bg.png')] bg-cover bg-no-repeat bg-center md:bg-center">
         <div class="header relative z-50 flex flex-col gap-7 items-center w-full md:w-max">
             <div class="tag tag-hero">
                 <p class="flex"><img src="/public/flare.svg" class="mr-2 hidden md:flex" />Intégration de notre IA pour
@@ -50,119 +51,131 @@
         </div>
         <div class="footer-buttons  md:w-max flex justify-center gap-4 md:gap-8 relative z-50">
             <button class="text-white px-6 py-3 rounded-full">Nous rejoindre</button>
-            <button class="text-white px-6 py-3 rounded-full">Nous contacter</button>
+            <button class="text-white px-6 py-3 rounded-full">Liste des destinations</button>
         </div>
     </section>
 
     <!-- section about -->
-    <section
-        class="about flex flex-col lg:flex-row items-center gap-24 pt-20 md:pt-24 px-10 md:px-16 lg:px-20 bg-[url('/public/star.png')] bg-cover bg-no-repeat bg-center overflow-hidden">
-        <div class="earth hidden lg:flex lg:w-2/5">
-            <img src="/public/earth.png" class="w-full h-full object-contain" />
-        </div>
-        <div class="about-content w-full lg:w-3/5 flex flex-col items-start gap-10">
-            <div class="header flex flex-col gap-7">
-                <div class="tag">
-                    <p class="flex">A propos</p>
+    <section class="about w-full overflow-hidden bg-[url('/public/star.png')] bg-cover bg-no-repeat bg-center">
+        <div
+            class="container mx-auto pt-20 md:pt-24 px-10 md:px-16 lg:px-20 flex flex-col lg:flex-row items-center gap-24 ">
+            <div class="earth hidden lg:flex lg:w-2/5">
+                <img src="/public/earth.png" class="w-full h-full object-contain" />
+            </div>
+            <div class="about-content w-full lg:w-3/5 flex flex-col items-start gap-10">
+                <div class="header flex flex-col gap-7">
+                    <div class="tag">
+                        <p class="flex">A propos</p>
+                    </div>
+                    <h2 class="text-white text-3xl md:text-4xl lg:text-5xl lato-bold">Parlons un peu de <span
+                            class="lato-black">Proxima</span></h2>
                 </div>
-                <h2 class="text-white text-3xl md:text-4xl lg:text-5xl lato-bold">Parlons un peu de <span
-                        class="lato-black">Proxima</span></h2>
+                <div class="content w-full">
+                    <p class="lg:text-lg w-full lg:w-11/12">
+                        <span class="lato-bold text-white">Proxima</span> est une application révolutionnaire qui vous
+                        permet de voyager vers les
+                        étoiles. Nous
+                        mettons à votre disposition une liste des planètes disponibles, ainsi que des capsules spatiales
+                        pour atteindre ces destinations. Vous trouverez également des informations sur la distance entre
+                        chaque destination et notre planète d'origine. Préparez-vous à explorer l'univers comme jamais
+                        auparavant avec Proxima !
+                    </p>
+                </div>
+                <button class="text-white px-6 py-3 rounded-full">
+                    Nos fonctionnalités
+                </button>
             </div>
-            <div class="content w-full">
-                <p class="lg:text-lg w-full lg:w-11/12">
-                    <span class="lato-bold text-white">Proxima</span> est une application révolutionnaire qui vous
-                    permet de voyager vers les
-                    étoiles. Nous
-                    mettons à votre disposition une liste des planètes disponibles, ainsi que des capsules spatiales
-                    pour atteindre ces destinations. Vous trouverez également des informations sur la distance entre
-                    chaque destination et notre planète d'origine. Préparez-vous à explorer l'univers comme jamais
-                    auparavant avec Proxima !
-                </p>
-            </div>
-            <button class="text-white px-6 py-3 rounded-full">
-                Nos fonctionnalités
-            </button>
         </div>
     </section>
 
     <!-- section fonctionnalités -->
     <section
-        class="features w-full h-max overflow-hidden flex flex-col gap-10 py-20 md:pt-24 px-10 md:px-16 lg:px-20 justify-center items-start bg-[url('/public/features-bg.png')] bg-cover bg-no-repeat bg-center overflow-hidden">
-        <div class="header w-full flex justify-between items-end">
-            <div class="title flex flex-col gap-7">
-                <div class="tag">
-                    <p class="flex">Fonctionnalités</p>
+        class="features w-full bg-[url('/public/features-bg.png')] bg-cover bg-no-repeat bg-center overflow-hidden h-max">
+        <div
+            class="container mx-auto py-20 md:pt-24 px-10 md:px-16 lg:px-20 flex flex-col gap-10 justify-center items-start">
+            <div class="header w-full flex justify-between items-end">
+                <div class="title flex flex-col gap-7">
+                    <div class="tag">
+                        <p class="flex">Fonctionnalités</p>
+                    </div>
+                    <h2 class="text-white text-3xl md:text-4xl lg:text-5xl lato-bold lg:leading-tight">Nos
+                        fonctionnalités à
+                        votre <span class="lato-black">services</span></h2>
                 </div>
-                <h2 class="text-white text-3xl md:text-4xl lg:text-5xl lato-bold lg:leading-tight">Nos fonctionnalités à
-                    votre <span class="lato-black">services</span></h2>
+                <button class="text-white px-6 py-3 rounded-full flex items-center gap-2 hidden md:flex">
+                    Nos fonctionnalités <img src="/public/arrow-right.svg" alt="">
+                </button>
             </div>
-            <button class="text-white px-6 py-3 rounded-full flex items-center gap-2 hidden md:flex">
-                Nos fonctionnalités <img src="/public/arrow-right.svg" alt="">
-            </button>
-        </div>
-        <div class="content w-full mt-">
-            <div class="container grid md:grid-cols-4 lg:grid-cols-5 gap-x-10 gap-y-12">
-                <div
-                    class="card  md:col-span-2 lg:col-span-2 bg-[url('/public/features-card1.png')]  bg-cover bg-center bg-no-repeat rounded-xl overflow-hidden p-8 flex items-end">
-                    <div class="card__content flex flex-col gap-3">
-                        <h3 class="text-white  text-xl lg:text-2xl font-bold">Authentification par reconnaissance
-                            faciale</h3>
-                        <p>Utilisez notre application en toute sécurité en vous authentifiant par reconnaissance faciale
-                        </p>
+            <div class="content w-full">
+                <div class="container grid md:grid-cols-4 lg:grid-cols-5 gap-x-10 gap-y-12">
+                    <div
+                        class="card  md:col-span-2 lg:col-span-2 bg-[url('/public/features-card1.png')]  bg-cover bg-center bg-no-repeat rounded-xl overflow-hidden p-8 flex items-end">
+                        <div class="card__content flex flex-col gap-3">
+                            <h3 class="text-white  text-xl lg:text-2xl font-bold">Authentification par reconnaissance
+                                faciale</h3>
+                            <p>Utilisez notre application en toute sécurité en vous authentifiant par reconnaissance
+                                faciale
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div
-                    class="card md:col-span-2 lg:col-span-3 bg-[url('/public/features-card2.png')]  bg-cover md:bg-center bg-no-repeat rounded-xl overflow-hidden p-8 flex items-end">
-                    <div class="card__content flex flex-col gap-3">
-                        <h3 class="text-white  text-xl lg:text-2xl  font-bold">Visualisation en 3D de l’ espace et les
-                            planètes</h3>
-                        <p>Profitez s’ une visualisation en 3D de l’espace et les planètes y compris , emerveillez vous!
-                        </p>
+                    <div
+                        class="card md:col-span-2 lg:col-span-3 bg-[url('/public/features-card2.png')]  bg-cover md:bg-center bg-no-repeat rounded-xl overflow-hidden p-8 flex items-end">
+                        <div class="card__content flex flex-col gap-3">
+                            <h3 class="text-white  text-xl lg:text-2xl  font-bold">Visualisation en 3D de l’ espace et
+                                les
+                                planètes</h3>
+                            <p>Profitez s’ une visualisation en 3D de l’espace et les planètes y compris , emerveillez
+                                vous!
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div
-                    class="card md:col-span-2 lg:col-span-3 bg-[url('/public/features-card3.png')]   bg-cover bg-center bg-no-repeat rounded-xl overflow-hidden p-8 flex items-end">
-                    <div class="card__content flex flex-col gap-3">
-                        <h3 class="text-white  text-xl lg:text-2xl  font-bold">Proposition de capsules et diverses
-                            destinations</h3>
-                        <p>Nous vous proposons diverses capsules et avons diversifiés les destinations selon vos besoins
-                        </p>
+                    <div
+                        class="card md:col-span-2 lg:col-span-3 bg-[url('/public/features-card3.png')]   bg-cover bg-center bg-no-repeat rounded-xl overflow-hidden p-8 flex items-end">
+                        <div class="card__content flex flex-col gap-3">
+                            <h3 class="text-white  text-xl lg:text-2xl  font-bold">Proposition de capsules et diverses
+                                destinations</h3>
+                            <p>Nous vous proposons diverses capsules et avons diversifiés les destinations selon vos
+                                besoins
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div
-                    class="card md:col-span-2 bg-[url('/public/features-card4.png')]  bg-cover bg-center bg-no-repeat rounded-xl overflow-hidden p-8 flex items-end">
-                    <div class="card__content">
-                        <h3 class="text-white  text-xl lg:text-2xl  font-bold">Assistance IA avec Chatbtot intégré</h3>
-                        <p>Nous avons intégré un Intelligence Artificielle, il vous assistera dans vos tracas
-                        </p>
+                    <div
+                        class="card md:col-span-2 bg-[url('/public/features-card4.png')]  bg-cover bg-center bg-no-repeat rounded-xl overflow-hidden p-8 flex items-end">
+                        <div class="card__content">
+                            <h3 class="text-white  text-xl lg:text-2xl  font-bold">Assistance IA avec Chatbtot intégré
+                            </h3>
+                            <p>Nous avons intégré un Intelligence Artificielle, il vous assistera dans vos tracas
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
     <!-- footer -->
-    <footer class="px-10 md:px-16 pb-7 flex flex-col gap-10 md:gap-8 overflow-hidden">
-        <div class="footer_first flex flex-col lg:flex-row gap-10 lg:gap-0 justify-between">
-            <div class="logo">
-                <img src="/public/logo.svg" alt="">
+    <footer class="w-full overflow-hidden relative bg-[url('/public/star.png')] bg-cover bg-no-repeat bg-center">
+        <div class="container mx-auto px-10 md:px-16 py-7 flex flex-col gap-10 md:gap-8">
+            <div class="footer_first flex flex-col lg:flex-row gap-10 lg:gap-0 justify-between">
+                <div class="logo">
+                    <img src="/public/logo.svg" alt="">
+                </div>
+                <div class="menu-item flex items-center">
+                    <ul class="flex flex-col md:flex-row gap-5 md:gap-8">
+                        <li class="text-white cursor-pointer">Accueil</li>
+                        <li class="text-white cursor-pointer">A propos</li>
+                        <li class="text-white cursor-pointer">Fonctionnalités</li>
+                        <li class="text-white cursor-pointer">FAQ</li>
+                    </ul>
+                </div>
+                <div class="social-icons flex gap-5">
+                    <img src="/public/facebook.svg" alt="">
+                    <img src="/public/twitter.svg" alt="">
+                    <img src="public/instagram.svg" alt="">
+                </div>
             </div>
-            <div class="menu-item flex items-center">
-                <ul class="flex flex-col md:flex-row gap-5 md:gap-8">
-                    <li class="text-white cursor-pointer">Accueil</li>
-                    <li class="text-white cursor-pointer">A propos</li>
-                    <li class="text-white cursor-pointer">Fonctionnalités</li>
-                    <li class="text-white cursor-pointer">FAQ</li>
-                </ul>
-            </div>
-            <div class="social-icons flex gap-5">
-                <img src="/public/facebook.svg" alt="">
-                <img src="/public/twitter.svg" alt="">
-                <img src="public/instagram.svg" alt="">
-            </div>
+            <p class="text-center">© 2024 by <span class="lato-bold">Johan</span></p>
         </div>
-        <p class="text-center">© 2024 by <span class="lato-bold">Johan</span></p>
     </footer>
 </body>
 
