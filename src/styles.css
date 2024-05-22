@@ -239,7 +239,7 @@ body {
 }
 
 .destinations-list .destination-card {
-    width: 666px!important;
+    width: 380px;
     padding: 25px;
     border: 1px solid rgba(128, 128, 128, 0.40);
     background: linear-gradient(133deg, #131212 -12.99%, rgba(21, 20, 20, 0.94) 23.89%, rgba(22, 22, 22, 0.69) 56.42%, rgba(25, 25, 25, 0.77) 93.29%);
