@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/output.css">
     <title>PROXIMA</title>
-    <script src="/swipper.js"></script>
 </head>
 
 <body>
@@ -155,9 +154,8 @@
     </section>
 
     <!-- section listes des destinations -->
-    <section class="destinations-list w-full bg-[url('/public/star.png')] bg-cover bg-no-repeat bg-center h-max">
-        <div
-            class="container mx-auto py-20 md:pt-24  flex flex-col gap-10 justify-between items-start">
+    <section class="destinations-list w-full bg-[url('/public/star.png')] bg-cover bg-no-repeat bg-center h-max  overflow-hidden">
+        <div class="container mx-auto py-20 md:pt-24  flex flex-col gap-10 justify-between items-start">
             <div class="header w-full px-10 md:px-16 lg:px-20 flex justify-between items-end overflow-hidden">
                 <div class="title flex flex-col gap-7">
                     <div class="tag">
@@ -167,48 +165,50 @@
                         Liste des <span class="lato-black">destinations</span></h2>
                 </div>
                 <div class="swipper-buttons flex gap-3">
-                    <img src="/public/chevron-left.svg" class="w-12">
-                    <img src="/public/chevron-right.svg" class="w-12">
+                    <img src="/public/chevron-left.svg" class="w-12 arrows-btn cursor-pointer" id="left">
+                    <img src="/public/chevron-right.svg" class="w-12 arrows-btn cursor-pointer" id="right">
                 </div>
             </div>
-            <div class="destinations-list__container w-full px-10 md:px-16 lg:pl-20 overflow-hidden">
-            <div class=" content w-max">
-                <div class="gap-10 flex width-max">
-                    <div class="destination-card rounded-xl">
-                        <img src="/public/mercury.svg" class="w-full">
-                        <div class="destination-card__content flex flex-col gap-3">
-                            <h3 class="text-white  text-xl lg:text-2xl  font-bold">Planète Mercury</h3>
-                            <p>Mercure est la plus petite planète du système solaire et la plus proche du Soleil. Son
-                                orbite autour du Soleil prend 87,97 jours terrestres.</p>
+            <div class="swiper-container destinations-list__container w-full overflow-hidden px-10 md:px-16 lg:pl-20 ">
+                <div class=" content w-max">
+                    <div class="gap-10 flex width-max">
+                        <div class="destination-card rounded-xl">
+                            <img src="/public/mercury.svg" class="w-full" draggable="false">
+                            <div class="destination-card__content flex flex-col gap-3">
+                                <h3 class="text-white  text-xl lg:text-2xl  font-bold">Planète Mercury</h3>
+                                <p>Mercure est la plus petite planète du système solaire et la plus proche du Soleil.
+                                    Son
+                                    orbite autour du Soleil prend 87,97 jours terrestres.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="destination-card rounded-xl">
-                        <img src="/public/earth.svg" class="w-full">
-                        <div class="destination-card__content flex flex-col gap-3">
-                            <h3 class="text-white  text-xl lg:text-2xl  font-bold">Planète Terre</h3>
-                            <p>La Terre est la troisième planète après le Soleil et la seule connue pour abriter la vie,
-                                recouverte à 71% par des océans d'eau liquide. </p>
+                        <div class="destination-card rounded-xl">
+                            <img src="/public/earth.svg" class="w-full" draggable="false">
+                            <div class="destination-card__content flex flex-col gap-3">
+                                <h3 class="text-white  text-xl lg:text-2xl  font-bold">Planète Terre</h3>
+                                <p>La Terre est la troisième planète après le Soleil et la seule connue pour abriter la
+                                    vie,
+                                    recouverte à 71% par des océans d'eau liquide. </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="destination-card rounded-xl">
-                        <img src="/public/mars.svg" class="w-full">
-                        <div class="destination-card__content flex flex-col gap-3">
-                            <h3 class="text-white  text-xl lg:text-2xl  font-bold">Planète Mars</h3>
-                            <p>Mars est la quatrième planète après le Soleil et la deuxième plus petite planète du
-                                système solaire, plus grande que Mercure.</p>
+                        <div class="destination-card rounded-xl">
+                            <img src="/public/mars.svg" class="w-full" draggable="false">
+                            <div class="destination-card__content flex flex-col gap-3">
+                                <h3 class="text-white  text-xl lg:text-2xl  font-bold">Planète Mars</h3>
+                                <p>Mars est la quatrième planète après le Soleil et la deuxième plus petite planète du
+                                    système solaire, plus grande que Mercure.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="destination-card rounded-xl">
-                        <img src="/public/mars.svg" class="w-full">
-                        <div class="destination-card__content flex flex-col gap-3">
-                            <h3 class="text-white  text-xl lg:text-2xl  font-bold">Planète Mars</h3>
-                            <p>Mars est la quatrième planète après le Soleil et la deuxième plus petite planète du
-                                système solaire, plus grande que Mercure.</p>
+                        <div class="destination-card rounded-xl">
+                            <img src="/public/mars.svg" class="w-full" draggable="false">
+                            <div class="destination-card__content flex flex-col gap-3">
+                                <h3 class="text-white  text-xl lg:text-2xl  font-bold">Planète Mars</h3>
+                                <p>Mars est la quatrième planète après le Soleil et la deuxième plus petite planète du
+                                    système solaire, plus grande que Mercure.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
 
@@ -237,5 +237,6 @@
         </div>
     </footer>
 </body>
+<script src="/swipper.js"></script>
 
 </html>

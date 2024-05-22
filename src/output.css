@@ -605,10 +605,6 @@ video {
   margin-right: 0.5rem;
 }
 
-.mr-0 {
-  margin-right: 0px;
-}
-
 .flex {
   display: flex;
 }
@@ -1089,6 +1085,17 @@ body {
   padding: 25px;
   border: 1px solid rgba(128, 128, 128, 0.40);
   background: linear-gradient(133deg, #131212 -12.99%, rgba(21, 20, 20, 0.94) 23.89%, rgba(22, 22, 22, 0.69) 56.42%, rgba(25, 25, 25, 0.77) 93.29%);
+}
+
+.swiper-container{
+  scroll-behavior: smooth;
+}
+
+.swiper-container.dragging .destination-card {
+  cursor: grab;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .destinations-list .destination-card img {
